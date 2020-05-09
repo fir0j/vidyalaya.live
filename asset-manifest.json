@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/vidyalaya.live/static/css/main.4bcffbf0.chunk.css",
+    "main.js": "/vidyalaya.live/static/js/main.06045360.chunk.js",
+    "main.js.map": "/vidyalaya.live/static/js/main.06045360.chunk.js.map",
+    "runtime-main.js": "/vidyalaya.live/static/js/runtime-main.29b609cd.js",
+    "runtime-main.js.map": "/vidyalaya.live/static/js/runtime-main.29b609cd.js.map",
+    "static/js/2.960a700f.chunk.js": "/vidyalaya.live/static/js/2.960a700f.chunk.js",
+    "static/js/2.960a700f.chunk.js.map": "/vidyalaya.live/static/js/2.960a700f.chunk.js.map",
+    "index.html": "/vidyalaya.live/index.html",
+    "precache-manifest.7b0ff40ef464de68f1a10bd8fc54fa17.js": "/vidyalaya.live/precache-manifest.7b0ff40ef464de68f1a10bd8fc54fa17.js",
+    "service-worker.js": "/vidyalaya.live/service-worker.js",
+    "static/css/main.4bcffbf0.chunk.css.map": "/vidyalaya.live/static/css/main.4bcffbf0.chunk.css.map",
+    "static/js/2.960a700f.chunk.js.LICENSE.txt": "/vidyalaya.live/static/js/2.960a700f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.29b609cd.js",
+    "static/js/2.960a700f.chunk.js",
+    "static/css/main.4bcffbf0.chunk.css",
+    "static/js/main.06045360.chunk.js"
+  ]
+}

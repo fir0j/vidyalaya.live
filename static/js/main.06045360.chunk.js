@@ -1,0 +1,2 @@
+(this["webpackJsonpvidyalaya.live"]=this["webpackJsonpvidyalaya.live"]||[]).push([[0],{3:function(e,n,t){e.exports=t(9)},8:function(e,n,t){},9:function(e,n,t){"use strict";t.r(n);var a=t(0),l=t.n(a),r=t(2),i=t.n(r),o=function(){return l.a.createElement("div",{className:"text-green-500"},"Hello World!")};t(8);i.a.render(l.a.createElement(o,null),document.getElementById("root"))}},[[3,1,2]]]);
+//# sourceMappingURL=main.06045360.chunk.js.map
