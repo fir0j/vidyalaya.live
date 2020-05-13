@@ -1,36 +1,6 @@
 @tailwind base;
 @tailwind components;
 
-/* .btn {
-	@apply inline-block px-5 py-3 rounded text-sm uppercase tracking-wider font-semibold;
-}
-
-.btn:focus {
-	@apply outline-none shadow-outline;
-}
-
-.btn-indigo {
-	@apply bg-indigo-500 text-white;
-}
-
-.btn-orange {
-	@apply bg-orange-500 text-white;
-}
-
-.btn:hover {
-	@apply bg-indigo-400;
-}
-
-.btn:active {
-	@apply bg-indigo-600;
-}
-
-.top10 {
-	top: 10%;
-}
-
-*/
-
 .flex-center {
 	display: flex;
 	justify-content: center;
@@ -49,8 +19,6 @@
 }
 
 .homepage-bg .vidyalaya-bg {
-	/* top: 102px;
-	left: 809px; */
 	max-width: 252px;
 	max-height: 77px;
 	text-align: left;
@@ -61,8 +29,6 @@
 }
 
 .homepage-bg .teacher-bg {
-	/* top: 367px;
-	left: 755px; */
 	max-width: 410px;
 	max-height: 117px;
 	background: #ffffff 0% 0% no-repeat padding-box;
@@ -71,8 +37,6 @@
 }
 
 .homepage-bg .teacher-bg .teacher {
-	/* top: 403px; */
-	/* left: 903px; */
 	max-width: 116px;
 	max-height: 43px;
 	text-align: left;
@@ -83,8 +47,6 @@
 }
 
 .homepage-bg .student-bg {
-	/* top: 596px; */
-	/* left: 755px; */
 	max-width: 410px;
 	max-height: 117px;
 	background: #ffffff 0% 0% no-repeat padding-box;
@@ -93,5 +55,61 @@
 }
 
 /* teacher-homepage */
+.navbar {
+	max-width: 1920px;
+	max-height: 91px;
+	background: #50579b 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #00000029;
+	opacity: 1;
+}
+
+.navbar .logo {
+	max-width: 129px;
+	max-height: 38px;
+	text-align: left;
+	font: Bold Italic 32px/42px Gibson BoldItalic;
+	letter-spacing: 0.64px;
+	color: #ffffff;
+	opacity: 1;
+}
+
+.navbar .contact {
+	max-width: 90px;
+	max-height: 21px;
+	text-align: left;
+	font: Medium 18px/24px Inter;
+	letter-spacing: 0.36px;
+	color: #ffffff;
+	opacity: 0.74;
+}
+
+.navbar .login {
+	max-width: 57px;
+	max-height: 21px;
+	text-align: left;
+	font: Medium 18px/24px Inter;
+	letter-spacing: 0.36px;
+	color: #ffffff;
+	opacity: 0.74;
+}
+
+.login-container {
+	max-width: 150px;
+	width: 100%;
+}
+
+@media (min-width: 480px) {
+	.login-container {
+		max-width: 200px;
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.login-container {
+		max-width: 450px;
+		width: 100%;
+	}
+}
 
 @tailwind utilities;
