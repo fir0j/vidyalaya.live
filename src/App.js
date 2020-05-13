@@ -1,13 +1,13 @@
-import React, { Fragment } from 'react';
-// import { Homepage } from './components/Homepage.component';
-import { Topbar } from './components/Topbar.component';
-import { Sidebar } from './components/Sidebar.component';
+import React, { Fragment, useState } from 'react';
+import { Homepage } from './components/pages/Home.page';
+import { TeacherPage } from './components/pages/Teacher.page';
 
 const App = () => {
+	const [ currentPage, setCurrentPage ] = useState('homepage');
+
 	return (
 		<Fragment>
-			<Topbar />
-			<Sidebar />
+			{currentPage === 'homepage' ? <Homepage setCurrentPage={setCurrentPage} /> : <TeacherPage />}
 		</Fragment>
 	);
 };
