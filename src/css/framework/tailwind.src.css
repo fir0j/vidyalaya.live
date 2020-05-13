@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
-```css .btn {
+
+/* .btn {
 	@apply inline-block px-5 py-3 rounded text-sm uppercase tracking-wider font-semibold;
 }
 
@@ -28,14 +29,69 @@
 	top: 10%;
 }
 
+*/
+
 .flex-center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.h-28 {
-	height: 7rem;
+/* homepage */
+
+.homepage-bg {
+	top: 0px;
+	left: 0px;
+	max-width: 1920px;
+	max-height: 1080px;
+	background: #eff3f9 0% 0% no-repeat padding-box;
+	opacity: 1;
 }
+
+.homepage-bg .vidyalaya-bg {
+	/* top: 102px;
+	left: 809px; */
+	max-width: 252px;
+	max-height: 77px;
+	text-align: left;
+	font: Bold Italic 65px/84px Gibson BoldItalic;
+	letter-spacing: 0px;
+	color: #50579b;
+	opacity: 1;
+}
+
+.homepage-bg .teacher-bg {
+	/* top: 367px;
+	left: 755px; */
+	max-width: 410px;
+	max-height: 117px;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: 1px solid #707070;
+	opacity: 1;
+}
+
+.homepage-bg .teacher-bg .teacher {
+	/* top: 403px; */
+	/* left: 903px; */
+	max-width: 116px;
+	max-height: 43px;
+	text-align: left;
+	font: Regular 32px/43px Roboto;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+
+.homepage-bg .student-bg {
+	/* top: 596px; */
+	/* left: 755px; */
+	max-width: 410px;
+	max-height: 117px;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: 1px solid #707070;
+	opacity: 1;
+}
+
+/* teacher-homepage */
 
 @tailwind utilities;

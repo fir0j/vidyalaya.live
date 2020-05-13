@@ -4,7 +4,8 @@ module.exports = {
 		// syntax like colors  in case you don't know
 		extend: {
 			colors: {
-				'brand-blue': '#1992d4'
+				'brand-blue': '#50579B',
+				'brand-bg': '#EFF3F9'
 			},
 			spacing: {
 				'72': '18rem'
