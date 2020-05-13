@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Sidebar = () => (
-	<div className="border sidebar flex flex-col flex-start px-8">
+	<div className="border fixed sidebar h-screen flex flex-col flex-start px-8">
 		<div className="h-16 flex-center sidebar-item mt-15px cursor-pointer">
 			<div className="flex-none flex w-full ">
 				<p className="flex-none img-school w-6 h-6 flex" />

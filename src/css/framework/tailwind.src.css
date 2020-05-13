@@ -124,6 +124,7 @@
 	background: #ffffff 0% 0% no-repeat padding-box;
 	box-shadow: 3px 3px 12px #0000000D;
 	opacity: 1;
+	margin-top: 91px;
 }
 
 .sidebar .sidebar-item {
@@ -199,5 +200,66 @@
 }
 
 /* end of Sidebar */
+
+/* start of Classroom */
+.classroom-bg {
+	max-width: 1920px;
+	max-height: 1419px;
+	background: #eff3f9 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+
+.content-area {
+	margin-top: 120px;
+	margin-left: 320px;
+	margin-right: 350px;
+	/* height: calc(100%-91px);
+	height: calc(100%-266px); */
+	/* padding-left: 366px; */
+}
+
+.class-container {
+	width: 500px;
+}
+
+.choose-class {
+	max-width: 157px;
+	max-height: 29px;
+	text-align: left;
+	font: Medium 24px/29px Inter;
+	letter-spacing: 0px;
+	color: #5c626d;
+	opacity: 1;
+}
+
+.classes {
+	max-width: 165px;
+	max-height: 56px;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: 1px solid #00000033;
+	border-radius: 4px;
+	/* opacity: 1; */
+}
+
+.class-dropdown-text {
+	max-width: 62px;
+	max-height: 21px;
+	text-align: left;
+	font: Regular 18px/21px Inter;
+	letter-spacing: 0px;
+	color: #18191b;
+	opacity: 0.84;
+}
+
+.gettingStarted {
+	width: 281px;
+	height: 863px;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: 1px solid #ebedf1;
+	border-radius: 6px;
+	opacity: 1;
+}
+
+/* end of Classroom */
 
 @tailwind utilities;
