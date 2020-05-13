@@ -719,10 +719,97 @@ video {
 
 @media (min-width: 768px) {
   .login-container {
-    max-width: 450px;
+    max-width: 400px;
     width: 100%;
   }
 }
+
+/* end of Topbar */
+
+/* start of Sidebar */
+
+.sidebar {
+  /* top: 90px;
+	left: 0px; */
+  max-width: 266px;
+  max-height: 985px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 12px #0000000D;
+  opacity: 1;
+}
+
+.sidebar .sidebar-item {
+  max-width: 221px;
+  max-height: 56px;
+  border-radius: 4px;
+  padding-left: 2rem;
+  margin-bottom: 15px;
+}
+
+.sidebar .sidebar-item:hover {
+  background: #50589b1e 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.ml-5px {
+  margin-left: 7px;
+}
+
+.mt-15px {
+  margin-top: 15px;
+}
+
+.sidebar-text {
+  max-width: 122px;
+  max-height: 21px;
+  text-align: left;
+  font: Regular 18px/21px Inter;
+  letter-spacing: 0px;
+  color: #56656c;
+  opacity: 1;
+}
+
+.sidebar .img-school {
+  background: transparent url('../../img/school-24px.svg') 0% 0% no-repeat padding-box;
+}
+
+.sidebar .img-video {
+  background: transparent url('../../img/movie_creation-24px.svg') 0% 0% no-repeat padding-box;
+}
+
+.sidebar .img-assignment {
+  background: transparent url('../../img/Assignment.svg') 0% 0% no-repeat padding-box;
+}
+
+.sidebar .img-note {
+  background: transparent url('../../img/Notes.svg') 0% 0% no-repeat padding-box;
+}
+
+.sidebar .img-setting {
+  background: transparent url('../../img/settings.svg') 0% 0% no-repeat padding-box;
+}
+
+.sidebar .img-contact {
+  background: transparent url('../../img/contact.svg') 0% 0% no-repeat padding-box;
+}
+
+.sidebar .img-faq {
+  background: transparent url('../../img/faq.svg') 0% 0% no-repeat padding-box;
+}
+
+.sidebar .sidebar-category {
+  max-width: 65px;
+  max-height: 18px;
+  text-align: left;
+  font: Regular 15px/18px Inter;
+  letter-spacing: 0px;
+  color: #56656c;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+
+/* end of Sidebar */
 
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
