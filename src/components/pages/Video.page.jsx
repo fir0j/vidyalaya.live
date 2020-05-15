@@ -3,8 +3,19 @@ import React, { Fragment } from 'react';
 export const VideoPage = () => (
 	<div className="mt-8 w-full">
 		<p className="assignment-topic font-bold">Videos</p>
-		<div className="w-full flex justify-start">
+		<div className="w-full flex justify-between">
 			<p className="assignment-subtopic w-full">Videos for students</p>
+
+			<div className="flex">
+				<div className="filter flex-center">
+					<p>Filter Date</p>
+					<p className="arrow-down-icon w-8 h-6" />
+				</div>
+				<div className="addVideo flex-center justify-around">
+					<p className="plus-icon w-4 h-4" />
+					<p>Add Videos</p>
+				</div>
+			</div>
 		</div>
 
 		<div className="content-container w-full px-1 mt-8 px-8">

@@ -5,8 +5,9 @@ const AssignmentsSection = () => (
 		<p className="assignment-topic font-bold">Assignment</p>
 		<div className="w-full flex justify-between">
 			<p className="assignment-subtopic w-full">Check student Assignments</p>
-			<div className="filter-text w-full h-full">
+			<div className="filter flex-center">
 				<p>Filter Date</p>
+				<p className="arrow-down-icon w-8 h-6" />
 			</div>
 		</div>
 

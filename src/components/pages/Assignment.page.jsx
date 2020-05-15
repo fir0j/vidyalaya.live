@@ -5,8 +5,15 @@ export const AssignmentPage = () => (
 		<p className="assignment-topic font-bold">Assignment</p>
 		<div className="w-full flex justify-between">
 			<p className="assignment-subtopic w-full">Check student Assignments</p>
-			<div className="filter-text w-full h-full">
-				<p>Filter Date</p>
+			<div className="flex">
+				<div className="filter flex-center">
+					<p>Filter Date</p>
+					<p className="arrow-down-icon w-8 h-6" />
+				</div>
+				<div className="addVideo flex-center justify-around">
+					<p className="plus-icon w-4 h-4" />
+					<p>Add Assignment</p>
+				</div>
 			</div>
 		</div>
 
