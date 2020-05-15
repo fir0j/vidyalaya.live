@@ -8,7 +8,7 @@ const App = () => {
 
 	return (
 		<Fragment>
-			{currentPage === 'homepage' ? <Homepage setCurrentPage={setCurrentPage} /> : <TeacherPage />}
+			{currentPage !== 'homepage' ? <Homepage setCurrentPage={setCurrentPage} /> : <TeacherPage />}
 		</Fragment>
 	);
 };

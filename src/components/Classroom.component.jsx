@@ -88,10 +88,10 @@ export const Classroom = () => {
 						<p>No</p>
 					</div>
 					<div className=" w-full flex justify-end">
-						<p className="flex">
+						<li className="flex">
 							<p className="mr-2">Details</p>
 							<p className="timer-icon w-6 h-8" />
-						</p>
+						</li>
 					</div>
 				</div>
 				<hr />
@@ -110,10 +110,10 @@ export const Classroom = () => {
 						<p className="checked-container" />
 					</div>
 					<div className="flex justify-end">
-						<p className="flex">
+						<li className="flex">
 							<p className="mr-2">Details</p>
 							<p className="delete-icon w-6 h-6" />
-						</p>
+						</li>
 					</div>
 				</div>
 			</div>
@@ -152,10 +152,10 @@ export const Classroom = () => {
 						<p>https://youtube/vidyalaya</p>
 					</div>
 					<div className=" flex justify-end">
-						<p className="flex">
+						<li className="flex">
 							<p className="mr-2">Details</p>
 							<p className="timer-icon w-6 h-8" />
-						</p>
+						</li>
 					</div>
 				</div>
 				<hr />
@@ -168,10 +168,10 @@ export const Classroom = () => {
 						<p>https://youtube/vidyalaya</p>
 					</div>
 					<div className="  flex justify-end">
-						<p className="flex">
+						<li className="flex">
 							<p className="mr-2">Details</p>
 							<p className="timer-icon w-6 h-8" />
-						</p>
+						</li>
 					</div>
 				</div>
 				<hr />
@@ -184,10 +184,10 @@ export const Classroom = () => {
 						<p>https://youtube/vidyalaya</p>
 					</div>
 					<div className="flex justify-end">
-						<p className="flex">
+						<li className="flex">
 							<p className="mr-2">Details</p>
 							<p className="timer-icon w-6 h-8" />
-						</p>
+						</li>
 					</div>
 				</div>
 				<hr />
@@ -223,10 +223,10 @@ export const Classroom = () => {
 					</div>
 
 					<div className=" w-full flex justify-end">
-						<p className="flex">
+						<li className="flex">
 							<p className="mr-2">Details</p>
 							<p className="timer-icon w-6 h-8" />
-						</p>
+						</li>
 					</div>
 				</div>
 				<hr />
@@ -237,10 +237,10 @@ export const Classroom = () => {
 					</div>
 
 					<div className=" w-full flex justify-end">
-						<p className="flex">
+						<li className="flex">
 							<p className="mr-2">Details</p>
 							<p className="timer-icon w-6 h-8" />
-						</p>
+						</li>
 					</div>
 				</div>
 				<hr />
@@ -251,10 +251,10 @@ export const Classroom = () => {
 					</div>
 
 					<div className=" w-full flex justify-end">
-						<p className="flex">
+						<li className="flex">
 							<p className="mr-2">Details</p>
 							<p className="timer-icon w-6 h-8" />
-						</p>
+						</li>
 					</div>
 				</div>
 				<hr />
