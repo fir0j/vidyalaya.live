@@ -4,11 +4,14 @@ import { Topbar } from '../Topbar.component';
 import { Sidebar } from '../Sidebar.component';
 import { ClassroomPage } from './Classroom.page';
 import { VideoPage } from './Video.page';
+import { AddVideoPage } from './AddVideo.page';
 import { AssignmentPage } from './Assignment.page';
+import { AddAssignmentPage } from './AddAssignment.page';
 import { NotePage } from './Note.page';
+import { AddNotePage } from './AddNote.page';
 
 export const TeacherPage = () => {
-	const [ activePage, setActivePage ] = useState('video');
+	const [ activePage, setActivePage ] = useState('classroom');
 
 	const ClassSection = () => (
 		<div className="flex items-center top-content w-full">
@@ -76,11 +79,17 @@ export const TeacherPage = () => {
 			case 'classroom':
 				return <ClassroomPage />;
 			case 'video':
-				return <VideoPage />;
+				return <VideoPage setActivePage={setActivePage} />;
+			case 'addvideo':
+				return <AddVideoPage setActivePage={setActivePage} />;
 			case 'assignment':
-				return <AssignmentPage />;
+				return <AssignmentPage setActivePage={setActivePage} />;
+			case 'addassignment':
+				return <AddAssignmentPage setActivePage={setActivePage} />;
 			case 'note':
-				return <NotePage />;
+				return <NotePage setActivePage={setActivePage} />;
+			case 'addnote':
+				return <AddNotePage setActivePage={setActivePage} />;
 			default:
 				return '';
 		}

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-export const NotePage = () => (
+export const NotePage = ({ setActivePage }) => (
 	<div className="mt-8 w-full">
 		<p className="assignment-topic font-bold">Notes</p>
 		<div className="w-full flex justify-between">
@@ -11,7 +11,10 @@ export const NotePage = () => (
 					<p>Filter Date</p>
 					<p className="arrow-down-icon w-8 h-6" />
 				</div>
-				<div className="addVideo flex-center justify-around">
+				<div
+					onClick={() => setActivePage('addnote')}
+					className="addVideo flex-center justify-around cursor-pointer"
+				>
 					<p className="plus-icon w-4 h-4" />
 					<p>Add Notes</p>
 				</div>

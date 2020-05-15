@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-export const AssignmentPage = () => (
+export const AssignmentPage = ({ setActivePage }) => (
 	<div className="mt-8 w-full">
 		<p className="assignment-topic font-bold">Assignment</p>
 		<div className="w-full flex justify-between">
@@ -10,7 +10,10 @@ export const AssignmentPage = () => (
 					<p>Filter Date</p>
 					<p className="arrow-down-icon w-8 h-6" />
 				</div>
-				<div className="addVideo flex-center justify-around">
+				<div
+					onClick={() => setActivePage('addassignment')}
+					className="addVideo flex-center justify-around cursor-pointer"
+				>
 					<p className="plus-icon w-4 h-4" />
 					<p>Add Assignment</p>
 				</div>
