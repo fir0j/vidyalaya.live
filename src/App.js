@@ -1,15 +1,8 @@
-import React, { Fragment, useState } from 'react';
-import { Homepage } from './components/pages/Home.page';
-import { TeacherPage } from './components/pages/Teacher.page';
+import React from 'react';
+import { Homepage } from './components/Home.page';
 
 const App = () => {
-	const [ currentPage, setCurrentPage ] = useState('teacherpage');
-
-	return (
-		<Fragment>
-			{currentPage === 'teacherpage' ? <TeacherPage /> : <Homepage setCurrentPage={setCurrentPage} />}
-		</Fragment>
-	);
+	return <Homepage />;
 };
 
 export default App;

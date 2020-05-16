@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Sidebar = ({ setActivePage }) => (
+export const StudentSidebar = ({ setActivePage }) => (
 	<div className="border sidebar flex flex-col flex-start px-8">
 		<div
 			onClick={() => setActivePage('classroom')}
@@ -8,7 +8,7 @@ export const Sidebar = ({ setActivePage }) => (
 		>
 			<div className="flex-none flex w-full ">
 				<p className="flex-none img-school w-6 h-6 flex" />
-				<p className="flex-none sidebar-text ml-5px">My Classroom</p>
+				<p className="flex-none sidebar-text ml-5px">My Class</p>
 			</div>
 		</div>
 

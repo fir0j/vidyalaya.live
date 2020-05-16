@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-export const NotePage = ({ setActivePage }) => (
+export const TeacherNote = ({ setActivePage }) => (
 	<div className="mt-8 w-full">
 		<p className="assignment-topic font-bold">Notes</p>
 		<div className="w-full flex justify-between">

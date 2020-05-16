@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import { Topbar } from '../Topbar.component';
-import { Sidebar } from '../Sidebar.component';
-import { ClassroomPage } from './Classroom.page';
-import { VideoPage } from './Video.page';
+import { TeacherTopbar } from '../Topbar.teacher.component';
+import { TeacherSidebar } from '../Sidebar.teacher.component';
+import { ClassroomPage } from './Classroom.teacher.page';
+import { TeacherVideo } from './Video.teacher.page';
 import { AddVideoPage } from './AddVideo.page';
-import { AssignmentPage } from './Assignment.page';
+import { TeacherAssignment } from './Assignment.teacher.page';
 import { AddAssignmentPage } from './AddAssignment.page';
-import { NotePage } from './Note.page';
+import { TeacherNote } from './Note.teacher.page';
 import { AddNotePage } from './AddNote.page';
 import { AssignmentDetailPage } from './AssignmentDetail.page';
 
 export const TeacherPage = () => {
-	const [ activePage, setActivePage ] = useState('assignmentdetail');
+	const [ activePage, setActivePage ] = useState('classroom');
 
 	const ClassSection = () => (
 		<div className="flex items-center top-content w-full">
@@ -79,17 +79,17 @@ export const TeacherPage = () => {
 			case 'classroom':
 				return <ClassroomPage />;
 			case 'video':
-				return <VideoPage setActivePage={setActivePage} />;
+				return <TeacherVideo setActivePage={setActivePage} />;
 			case 'addvideo':
 				return <AddVideoPage setActivePage={setActivePage} />;
 			case 'assignment':
-				return <AssignmentPage setActivePage={setActivePage} />;
+				return <TeacherAssignment setActivePage={setActivePage} />;
 			case 'addassignment':
 				return <AddAssignmentPage setActivePage={setActivePage} />;
 			case 'assignmentdetail':
 				return <AssignmentDetailPage setActivePage={setActivePage} />;
 			case 'note':
-				return <NotePage setActivePage={setActivePage} />;
+				return <TeacherNote setActivePage={setActivePage} />;
 			case 'addnote':
 				return <AddNotePage setActivePage={setActivePage} />;
 			default:
@@ -100,9 +100,9 @@ export const TeacherPage = () => {
 	return (
 		<div className="flex-center">
 			<div className="relative teacherPage-dimension w-full h-screen">
-				<Topbar />
+				<TeacherTopbar />
 				<div className="relative flex w-full overflow-y">
-					<Sidebar setActivePage={setActivePage} />
+					<TeacherSidebar setActivePage={setActivePage} />
 					<div className="w-full flex relative ml-87px ">
 						<div className="relative w-9/12 left-container ">
 							{activePage === 'assignmentdetail' ? '' : <ClassSection />}

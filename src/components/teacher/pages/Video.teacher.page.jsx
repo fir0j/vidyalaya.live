@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from 'react';
 
-export const VideoPage = ({ setActivePage }) => {
-	const [ overlay, setOverlay ] = useState(false);
+export const TeacherVideo = ({ setActivePage }) => {
+	// const [ overlay, setOverlay ] = useState(false);
 
-	const SomeComponent = () => <div>i am a test component</div>;
+	// const SomeComponent = () => <div>i am a test component</div>;
 
 	return (
 		<div className="mt-8 w-full">
