@@ -638,6 +638,7 @@
 	letter-spacing: 0px;
 	color: #3142f0;
 }
+
 .attach-icon {
 	background: transparent url('../../img/attach_file-24px.svg') 0% 0% no-repeat padding-box;
 }
@@ -711,6 +712,79 @@
 	letter-spacing: 0px;
 	color: #FFFFFF99;
 	font-size: smaller;
+}
+
+.video-container {
+	margin-top: 48px;
+	width: 1137px;
+	height: 179px;
+}
+
+.video-title {
+	margin-top: 33px;
+	max-width: 386px;
+	height: 35px;
+	background: #d8d8d8;
+}
+
+.play-icon {
+	background: transparent url('../../img/play.svg') 0% 0% no-repeat padding-box;
+	opacity: 0.54;
+}
+
+.edit-button {
+	margin-top: 25px;
+	width: 170px;
+	height: 56px;
+}
+
+.edit-title {
+	width: 170px;
+	height: 56px;
+	border: 1px solid #50579b;
+	border-radius: 8px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.half-edit-button {
+	width: 56px;
+	height: 56px;
+	border: 1px solid #50579b;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-left: none;
+}
+
+.arrow-down-icon-navy {
+	background: transparent url('../../img/drop-down-arrow-blue.svg') 0% 0% no-repeat padding-box;
+	opacity: 0.54;
+}
+
+.video-disc-upper {
+	margin-top: 10px;
+	height: 35px;
+	background: #d8d8d8;
+}
+
+.video-disc-lower {
+	margin-top: 18px;
+	height: 35px;
+	background: #d8d8d8;
+	margin-bottom: 5px;
+}
+
+.thumbnail {
+	margin-right: 53px;
+	width: 222px;
+	height: 179px;
+	background: #ffffff 0% 0% no-repeat padding-box;
+}
+
+.video-line {
+	width: 770px;
+	margin-top: 20px;
+	margin-left: 230px;
 }
 
 /* --------------------------------------------------- */

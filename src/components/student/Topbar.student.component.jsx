@@ -9,9 +9,9 @@ export const StudentTopbar = () => (
 					<p className="flex-none">Welcome, Mayur keshav</p>
 					<p className="flex-none">Last login: May 11, 2020 3:42PM</p>
 				</div>
-				<p className="flex-none profile-icon rounded-full border border-red-500 flex-center">
+				<div className="flex-none profile-icon rounded-full border border-red-500 flex-center">
 					<p>MK</p>
-				</p>
+				</div>
 			</div>
 		</div>
 	</div>
