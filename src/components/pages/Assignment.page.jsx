@@ -57,7 +57,10 @@ export const AssignmentPage = ({ setActivePage }) => (
 						</div>
 						<div className=" flex justify-end">
 							<li className="flex">
-								<p className="mr-2 detail-button flex-center">
+								<p
+									onClick={() => setActivePage('assignmentdetail')}
+									className="mr-2 detail-button flex-center cursor-pointer"
+								>
 									<span>Details</span>
 								</p>
 								<p className="delete-icon w-6 h-8" />

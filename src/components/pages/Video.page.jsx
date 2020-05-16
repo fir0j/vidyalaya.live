@@ -1,6 +1,10 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 
 export const VideoPage = ({ setActivePage }) => {
+	const [ overlay, setOverlay ] = useState(false);
+
+	const SomeComponent = () => <div>i am a test component</div>;
+
 	return (
 		<div className="mt-8 w-full">
 			<p className="assignment-topic font-bold">Videos</p>
@@ -37,7 +41,7 @@ export const VideoPage = ({ setActivePage }) => {
 				</div>
 				<hr />
 
-				{Array.from([ 1, 2, 3, 4, 5, 6, 7, 8 ], (item) => (
+				{Array.from([ 1, 2, 3, 4, 5, 6, 7, 8, 9 ], (item) => (
 					<Fragment key={item}>
 						<div className="contents w-full h-screen flex justify-start items-center">
 							<div className=" flex justify-start w-full">
@@ -49,10 +53,19 @@ export const VideoPage = ({ setActivePage }) => {
 
 							<div className=" flex justify-end">
 								<li className="flex">
-									<p className="mr-2 detail-button flex-center">
+									<p className="mr-2 detail-button flex-center cursor-pointer">
 										<span>Details</span>
 									</p>
-									<p className="timer-icon w-6 h-8" />
+
+									<div className="relative w-6 h-6 option-icon">
+										<div>
+											<div className="options-overlay hidden ">
+												<div className="today-class cursor-pointer">Assign to today class</div>
+												<hr />
+												<div className="today-class cursor-pointer">delete</div>
+											</div>
+										</div>
+									</div>
 								</li>
 							</div>
 						</div>

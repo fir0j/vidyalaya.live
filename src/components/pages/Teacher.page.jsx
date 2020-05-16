@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import { Topbar } from '../Topbar.component';
 import { Sidebar } from '../Sidebar.component';
 import { ClassroomPage } from './Classroom.page';
@@ -9,9 +8,10 @@ import { AssignmentPage } from './Assignment.page';
 import { AddAssignmentPage } from './AddAssignment.page';
 import { NotePage } from './Note.page';
 import { AddNotePage } from './AddNote.page';
+import { AssignmentDetailPage } from './AssignmentDetail.page';
 
 export const TeacherPage = () => {
-	const [ activePage, setActivePage ] = useState('classroom');
+	const [ activePage, setActivePage ] = useState('assignmentdetail');
 
 	const ClassSection = () => (
 		<div className="flex items-center top-content w-full">
@@ -86,6 +86,8 @@ export const TeacherPage = () => {
 				return <AssignmentPage setActivePage={setActivePage} />;
 			case 'addassignment':
 				return <AddAssignmentPage setActivePage={setActivePage} />;
+			case 'assignmentdetail':
+				return <AssignmentDetailPage setActivePage={setActivePage} />;
 			case 'note':
 				return <NotePage setActivePage={setActivePage} />;
 			case 'addnote':
@@ -103,12 +105,10 @@ export const TeacherPage = () => {
 					<Sidebar setActivePage={setActivePage} />
 					<div className="w-full flex relative ml-87px ">
 						<div className="relative w-9/12 left-container ">
-							<ClassSection />
+							{activePage === 'assignmentdetail' ? '' : <ClassSection />}
 							{activePage === 'classroom' ? <ClassroomPage /> : displayTool(activePage)}
 						</div>
-						<div className="w-3/12 ">
-							<PanelSection />
-						</div>
+						<div className="w-3/12 ">{activePage === 'assignmentdetail' ? '' : <PanelSection />}</div>
 					</div>
 				</div>
 			</div>
