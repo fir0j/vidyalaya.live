@@ -1,9 +1,16 @@
 import React, { Fragment, useState } from 'react';
 
 export const TeacherVideo = ({ setActivePage }) => {
-	// const [ overlay, setOverlay ] = useState(false);
+	const [ modal, setModal ] = useState(false);
+	const [ itemClicked, setItemClicked ] = useState(null);
 
-	// const SomeComponent = () => <div>i am a test component</div>;
+	const handleOptionClicked = (itemId) => {
+		setItemClicked(itemId);
+		setModal(!modal);
+		// setModal(!modal);
+		// bubbling or event-delegation concept
+		// alert('option-overlay button clicked');
+	};
 
 	return (
 		<div className="mt-8 w-full">
@@ -57,14 +64,29 @@ export const TeacherVideo = ({ setActivePage }) => {
 										<span>Details</span>
 									</p>
 
-									<div className="relative w-6 h-6 option-icon">
-										<div>
-											<div className="options-overlay hidden ">
-												<div className="today-class cursor-pointer">Assign to today class</div>
-												<hr />
-												<div className="today-class cursor-pointer">delete</div>
-											</div>
-										</div>
+									{item === itemClicked && modal === true ? (
+										<div onClick={() => setModal(false)} className="invisible-div" />
+									) : (
+										''
+									)}
+
+									<div
+										onClick={() => handleOptionClicked(item)}
+										className="relative w-6 h-6 option-icon"
+									>
+										{item === itemClicked && modal === true ? (
+											<Fragment>
+												<div className="options-overlay ">
+													<div className="today-class cursor-pointer">
+														Assign to today class
+													</div>
+													<hr />
+													<div className="today-class cursor-pointer">delete</div>
+												</div>
+											</Fragment>
+										) : (
+											''
+										)}
 									</div>
 								</li>
 							</div>

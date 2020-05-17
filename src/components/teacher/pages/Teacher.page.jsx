@@ -102,7 +102,7 @@ export const TeacherPage = () => {
 			<div className="relative teacherPage-dimension w-full h-screen">
 				<TeacherTopbar />
 				<div className="relative flex w-full overflow-y">
-					<TeacherSidebar setActivePage={setActivePage} />
+					<TeacherSidebar activePage={activePage} setActivePage={setActivePage} />
 					<div className="w-full flex relative ml-87px ">
 						<div className="relative w-9/12 left-container ">
 							{activePage === 'assignmentdetail' ? '' : <ClassSection />}

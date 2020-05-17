@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 export const StudentVideo = () => (
 	<div className="mt-8 w-full">
