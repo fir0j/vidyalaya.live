@@ -62,7 +62,7 @@ export const StudentPage = () => {
 			<div className="relative teacherPage-dimension w-full h-screen">
 				<StudentTopbar />
 				<div className="relative flex w-full overflow-y">
-					<StudentSidebar setStudentPage={setStudentPage} />
+					<StudentSidebar studentPage={studentPage} setStudentPage={setStudentPage} />
 					<div className="w-full flex relative ml-87px ">
 						<div className="relative w-9/12 left-container ">
 							{/* {activePage === 'assignmentdetail' ? '' : <ClassSection />} */}
