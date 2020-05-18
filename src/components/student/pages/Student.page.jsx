@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { StudentTopbar } from '../Topbar.student.component';
 import { StudentSidebar } from '../Sidebar.student.component';
+import { StudentClass } from './Class.student.page';
 import { StudentVideo } from './Video.student.page';
 import { StudentAssignment } from './Assignment.student.page';
+import { StudentNote } from './Note.student.page';
 
 export const StudentPage = () => {
 	const [ studentPage, setStudentPage ] = useState('student-video');
@@ -42,8 +44,14 @@ export const StudentPage = () => {
 
 	const displayStudentPage = (action) => {
 		switch (action) {
+			case 'student-class':
+				return <StudentClass />;
 			case 'student-video':
 				return <StudentVideo />;
+			case 'student-assignment':
+				return <StudentAssignment />;
+			case 'student-note':
+				return <StudentNote />;
 			default:
 				return '';
 		}
@@ -54,7 +62,7 @@ export const StudentPage = () => {
 			<div className="relative teacherPage-dimension w-full h-screen">
 				<StudentTopbar />
 				<div className="relative flex w-full overflow-y">
-					<StudentSidebar setActivePage={setStudentPage} />
+					<StudentSidebar setStudentPage={setStudentPage} />
 					<div className="w-full flex relative ml-87px ">
 						<div className="relative w-9/12 left-container ">
 							{/* {activePage === 'assignmentdetail' ? '' : <ClassSection />} */}
