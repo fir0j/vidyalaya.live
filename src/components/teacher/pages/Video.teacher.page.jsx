@@ -7,9 +7,6 @@ export const TeacherVideo = ({ setActivePage }) => {
 	const handleOptionClicked = (itemId) => {
 		setItemClicked(itemId);
 		setModal(!modal);
-		// setModal(!modal);
-		// bubbling or event-delegation concept
-		// alert('option-overlay button clicked');
 	};
 
 	return (
